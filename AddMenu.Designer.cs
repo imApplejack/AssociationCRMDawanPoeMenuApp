@@ -35,6 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.listBoxMenu = new System.Windows.Forms.ListBox();
+            this.buttonAdd = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -69,6 +70,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(151, 28);
             this.comboBox1.TabIndex = 3;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -97,11 +99,21 @@
             this.listBoxMenu.Size = new System.Drawing.Size(288, 284);
             this.listBoxMenu.TabIndex = 6;
             // 
+            // buttonAdd
+            // 
+            this.buttonAdd.Location = new System.Drawing.Point(576, 389);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(94, 29);
+            this.buttonAdd.TabIndex = 7;
+            this.buttonAdd.Text = "Ajouter";
+            this.buttonAdd.UseVisualStyleBackColor = true;
+            // 
             // AddMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.listBoxMenu);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -125,5 +137,6 @@
         private Label label2;
         private Label label3;
         private ListBox listBoxMenu;
+        private Button buttonAdd;
     }
 }
